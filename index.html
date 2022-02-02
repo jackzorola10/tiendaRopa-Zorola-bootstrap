@@ -17,25 +17,46 @@
 style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); height: 100vh">
 
     <!-- START MENU -->
-    <header class="container-fluid menuBar sticky-top navbar-light">  
-      <div class="row">
-        <div class="col-2 ">
-          <img src="../bootstrap-project/assets/Logo.png" alt="">
-        </div>
-        <ul class="nav justify-content-end col-10 d-flex align-items-center">
-          <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="sections/camisetas.html">Camisetas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="sections/contactanos.html">Contactanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="sections/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="sections/carrito.html">Carrito</a>
-          </li>
-        </ul>
+    <header>  
+
+        <nav class="navbar navbar-expand-lg navbar-light menuBar sticky-top">
+          <div class="container-fluid">
+            <img src="../bootstrap-project/assets/Logo.png" alt="">
+            <button class="navbar-toggler border border-light fw-bolder border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              Burger Menu <i class="fas fa-hamburger text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 600px;">
+
+                <li class="btn btn-outline-light border-0">
+                  <a class="nav-link fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Camisetas <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Neon Genesis Evangelion</a></li>
+                    <li><a class="dropdown-item" href="#">Shingeki No Kyojin</a></li>
+                    <li><a class="dropdown-item" href="#">Kimetsu No Yaiba</a></li>
+                  </ul>
+                </li>
+
+                <li class="btn btn-outline-light border-0">
+                  <a class="nav-link fw-bolder" aria-current="page" href="sections/contactanos.html">Contactanos</a>
+                </li>
+
+                <li class="btn btn-outline-light border-0">
+                  <a class="nav-link fw-bolder" href="sections/nosotros.html">Nosotros</a>
+                </li>
+
+                <li class="btn btn-outline-light border-0 ">
+                  <a class="nav-link fw-bolder" href="sections/carrito.html" tabindex="-1">Carrito</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+
       </div>
     </header>
     <!-- MENU END -->
@@ -70,8 +91,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
 
         <div class="col-lg-6 align-items-center mt-5 mb-5 px-5">
           <h1>The best t-shirts of your favorite animes</h1>
-          <h4>Neon Genesis Evangelion is here to stay!</h4>
-          <button type="button" class="btn btn-primary btn-lg">Check Catalogue!</button>
+          <h4 class="my-4">Neon Genesis Evangelion is here to stay!</h4>
+          <button type="button" class="btn btn-primary btn-lg text-uppercase fw-bolder">Check Catalogue!</button>
         </div>
       </div>
     </div>
@@ -80,20 +101,20 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
     <!-- START RECENT ENTRIES 👕-->
     <h2 class="text-center mt-5 mb-5">Categorias Recientes</h2>
     <div class="container-xl bg-light bg-gradient bg-opacity-75 rounded-3">
-        <div class="row">
+        <div class="row justify-content-center">
               <div class="card text-white col-md-4 border-0 mt-2 bg-transparent"> 
                 <img src="assets/tshirts/tshirt1.png" class="card-img img-fluid" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card-img-overlay bg-black bg-opacity-25">
+                  <h5 class="card-title">Nuevas Entradas</h5>
+                  <p class="card-text">Preparate para ser recibido con todo el poder de los diseños de Febrero, acompañando a las nuevas temporadas tenemos solo lo mejor para resguardar tu cuerpo de los titanes.</p>
+                  <p class="card-text">Febrero 2022</p>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt2.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">The Metal Titan</h5>
                   <p class="card-text"> $200 <span class="badge bg-danger text-decoration-line-through">$300</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
@@ -102,8 +123,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt3.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Demon Slayer</h5>
+                  <p class="card-text">$250</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -111,8 +132,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt4.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$ <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">Tropical Charizard</h5>
+                  <p class="card-text">$300 <span class="badge bg-danger text-decoration-line-through">$599</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -120,8 +141,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt5.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Jujutsu Kaisen | 4 of us</h5>
+                  <p class="card-text">$299</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -129,8 +150,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt6.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Beast Mode</h5>
+                  <p class="card-text">$300</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -138,17 +159,17 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt7.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$ <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">The Best Sensei</h5>
+                  <p class="card-text">$249 <span class="badge bg-danger text-decoration-line-through">$300</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt7.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt11.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">With Her</h5>
+                  <p class="card-text">$200</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -156,8 +177,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt8.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">She Demon</h5>
+                  <p class="card-text">$450</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -165,8 +186,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt9.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$ <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">Brace Yourself</h5>
+                  <p class="card-text">$289 <span class="badge bg-danger text-decoration-line-through">$400</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -174,8 +195,8 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
                 <img src="assets/tshirts/tshirt10.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Majora's Mask</h5>
+                  <p class="card-text">$500</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -188,105 +209,104 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
     <!-- START OTHER CATEGORIES 🛍-->
     <h2 class="text-center mt-5 mb-5">Otras Categorias</h2>
     <div class="container-xl mt-5">
-      <h4>shingeki no kyojin</h4>
+      <h4>Shingeki no kyojin</h4>
     </div>
     <div class="container-xl bg-light bg-gradient bg-opacity-75 rounded-3">
-        <div class="row">
+        <div class="row justify-content-center">
               <div class="card text-white col-md-4 border-0 mt-2 bg-transparent"> 
                 <img src="assets/tshirts/tshirt1.png" class="card-img img-fluid" alt="...">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card-img-overlay bg-black bg-opacity-25">
+                  <h5 class="card-title">The Titans Are Here!</h5>
+                  <p class="card-text">There's no time for hesitation, you either prepare or die! Sudden decisions and sudden t-shirts all for the sake of humanity!</p>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt2.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt12.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text"> $200 <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">Anger</h5>
+                  <p class="card-text"> $250 <span class="badge bg-danger text-decoration-line-through">$300</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt3.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt13.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Ayanami</h5>
+                  <p class="card-text">$300</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt4.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt14.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$ <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">Look of death</h5>
+                  <p class="card-text">$267 <span class="badge bg-danger text-decoration-line-through">$300</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt5.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt15.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">A magic to behold</h5>
+                  <p class="card-text">$437</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt6.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt16.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Tokyo Revengers 3</h5>
+                  <p class="card-text">$300</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt7.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt17.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$ <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">Eva 1.0</h5>
+                  <p class="card-text">$300 <span class="badge bg-danger text-decoration-line-through">$400</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt7.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt18.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Eren Yeager</h5>
+                  <p class="card-text">$320</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt8.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt19.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Fire and Hell</h5>
+                  <p class="card-text">$200</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt9.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt20.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$ <span class="badge bg-danger text-decoration-line-through">$300</span></p>
+                  <h5 class="card-title">Ready for more</h5>
+                  <p class="card-text">$177 <span class="badge bg-danger text-decoration-line-through">$250</span></p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
 
               <div class="card col-md-2 border-0 bg-transparent mt-2" style="width: 18rem;">
-                <img src="assets/tshirts/tshirt10.png" class="card-img-top rounded-3" alt="...">
+                <img src="assets/tshirts/tshirt1.png" class="card-img-top rounded-3" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">$$$</p>
+                  <h5 class="card-title">Kimentsu No Yaiba</h5>
+                  <p class="card-text">$250</p>
                   <a href="#" class="btn btn-success btn-sm">Añadir <i class="fas fa-cart-plus"></i></a>
                 </div>
               </div>
@@ -297,10 +317,10 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
       <h4>Neon Genesis Evangelion</h4>
     </div>
     <div class="container-xl bg-light bg-gradient bg-opacity-75 rounded-3">
-      <div class="row">
+      <div class="row justify-content-center">
             <div class="card text-white col-md-4 border-0 mt-2 bg-transparent"> 
               <img src="assets/tshirts/tshirt1.png" class="card-img img-fluid" alt="...">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay bg-black bg-opacity-25">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
@@ -403,10 +423,10 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
       <h4>Kimetsu no yaiba</h4>
     </div>
     <div class="container-xl bg-light bg-gradient bg-opacity-75 rounded-3">
-      <div class="row">
+      <div class="row justify-content-center">
             <div class="card text-white col-md-4 border-0 mt-2 bg-transparent"> 
               <img src="assets/tshirts/tshirt1.png" class="card-img img-fluid" alt="...">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay bg-black bg-opacity-25">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text">Last updated 3 mins ago</p>
@@ -510,15 +530,15 @@ style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); 
 
     <!-- START FOOTER 🦶🏼-->
     <footer class="container-fluid pb-5 pt-5 px-5">
-        <div class="row">
+        <div class="row justify-content-center">
 
-            <div class="col-md-8 ">
+            <div class="col-md-4 ">
               <h4 class="text-white">Suscribete al newsletter</h4>
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 col">
                 <input type="text" class="form-control" placeholder="rei@nerv.com" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button class="btn btn-info" type="button" id="button-addon2">Suscribirte</button>
               </div>
-              <p class="text-white">Pie de pagina - ©2021 - desarrollado por: Jack Zorola</p>
+              <p class="text-white mb-5">Pie de pagina - ©2021 - desarrollado por: Jack Zorola</p>
             </div>
 
             <div class="col-md-4  flex-column">
