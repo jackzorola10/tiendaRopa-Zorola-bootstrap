@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KvM Store | Bootstrap Version</title>
+    <!-- Bootstrap Local -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/a24f710803.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-image" 
+style="background-image: url('https://i.ibb.co/pRSWNtQ/back-image-edited.png'); height: 100vh">
+
+    <!-- START MENU -->
+    <header>  
+
+        <nav class="navbar navbar-expand-lg navbar-light menuBar sticky-top">
+          <div class="container-fluid">
+              <a href="../index.html">
+                  <img src="../assets/Logo.png" alt="">
+              </a>
+            <button class="navbar-toggler border border-light fw-bolder border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              Burger Menu <i class="fas fa-hamburger text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 600px;">
+
+                <li class="btn btn-outline-light border-0">
+                  <a class="nav-link fw-bolder" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Camisetas <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Neon Genesis Evangelion</a></li>
+                    <li><a class="dropdown-item" href="#">Shingeki No Kyojin</a></li>
+                    <li><a class="dropdown-item" href="#">Kimetsu No Yaiba</a></li>
+                  </ul>
+                </li>
+
+                <li class="btn btn-outline-light border-0">
+                  <a class="nav-link fw-bolder" aria-current="page" href="../sections/contactanos.html">Contactanos</a>
+                </li>
+
+                <li class="btn btn-outline-light border-0">
+                  <a class="nav-link fw-bolder" href="#">Nosotros</a>
+                </li>
+
+                <li class="btn btn-outline-light border-0 ">
+                  <a class="nav-link fw-bolder" href="#" tabindex="-1">Carrito</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <!-- MENU END -->
+    
+
+    <!-- TITLE AND CHARACTER 😺-->
+    <div class="container-sm pt-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 align-self-center">
+            <h1 class="text-end fw-bolder">SENPAI NOTICED US!</h1>
+          </div>
+          <div class="col-sm-4">
+            <img id="startFormImg" class="img-fluid" src="../assets/contacto/startForm.png" alt="">
+          </div>
+        </div>
+    </div>
+    <!-- TITLE AND CHARACTER -->
+
+
+    <!-- START FORM 📝-->
+    <div class="container-sm">
+
+          <div class="row justify-content-center">  <!-- NOMBRE Y APELLIDO -->
+            <div class="col-sm-4"> <!-- NOMBRE -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                    <input type="text" class="form-control bg-light" placeholder="Shinji" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        
+
+            <div class="col-sm-4">   <!-- APELLIDO -->
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Apellido</span>
+                  <input type="text" class="form-control bg-light" placeholder="Ikari" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center"> <!-- DOMICILIO -->
+            <div class="col-sm-8">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Domicilio</span>
+                    <input type="text" class="form-control bg-light" placeholder="Tokio 3" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>  
+
+         <div class="row g-2 justify-content-center"> <!-- EMAIL Y MOTIVO DE CONTACTO -->
+
+            <div class="col-sm-4"> <!-- EMAIL -->
+              <div class="form-floating">
+                <input type="email" class="form-control bg-light" id="floatingInputGrid" placeholder="shinji@nerv.com" value="">
+                <label for="floatingInputGrid">Email</label>
+              </div>
+            </div>
+
+            <div class="col-sm-4"> <!-- MOTIVO DE CONTACTO -->
+              <div class="form-floating">
+                <select class="form-select bg-light" id="floatingSelectGrid" aria-label="Floating label select example">
+                  <option selected>Problemas con mi orden</option>
+                  <option value="1">Problemas con mi producto recibido</option>
+                  <option value="2">Two</option>
+                  <option value="3">Solicitud de Factura</option>
+                  <option value="4">Contacto en General</option>
+                </select>
+                <label for="floatingSelectGrid">Motivo de contacto</label>
+              </div>
+            </div>
+
+          </div>
+        
+          <div class="row justify-content-center pt-3"> <!-- COMENTARIOS -->
+            <div class="form-floating col-sm-8">
+                <textarea class="form-control bg-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentarios</label>
+              </div>
+          </div>
+
+          <div class="row justify-content-end">
+              <div class="col-sm-4 mt-2">
+                  <button type="button" class="btn btn-primary btn-lg">ENVIAR MENSAJE</button>
+              </div>
+          </div>
+
+
+
+
+    </div>
+    <!-- END FORM -->
+
+
+    <!-- BOTTOM MESSAGE 👹-->
+    <div class="container-sm pt-5">
+
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <h4>La mayoría de los mensajes son respondidos en un lapso de 2 a 3 días hábiles.</h4>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-2 justify-content-center">
+                <img class="endFormImg" src="../assets/contacto/endForm.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- BOTTOM MESSAGE -->
+
+
+    <!-- START FOOTER 🦶🏼-->
+    <footer class="container-fluid pb-5 pt-5 px-5">
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 ">
+              <h4 class="text-white">Suscribete al newsletter</h4>
+              <div class="input-group mb-3 col">
+                <input type="text" class="form-control" placeholder="rei@nerv.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-info" type="button" id="button-addon2">Suscribirte</button>
+              </div>
+              <p class="text-white mb-5">Pie de pagina - ©2021 - desarrollado por: Jack Zorola</p>
+            </div>
+
+            <div class="col-md-4  flex-column">
+                <h4 class="text-white">Siguenos en redes sociales</h4>
+                <a class="nav-link text-white" href="">Instagram <i class="fab fa-instagram"></i></a>
+                <a class="nav-link text-white" href="">Correo <i class="far fa-envelope"></i></a>
+                <a class="nav-link text-white" href="">Facebook <i class="fab fa-facebook-square"></i></a>
+                <a class="nav-link text-white" href="">Spotify <i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

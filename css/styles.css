@@ -5,3 +5,11 @@
 footer{
     background-color: #293241;
 }
+
+#startFormImg{
+    max-height: 200px;
+}
+
+.endFormImg{
+    height: 200px;
+}
