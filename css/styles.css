@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&family=Staatliches&display=swap');
+
 .menuBar{
     background-color: #EE6C4D;
 }
@@ -17,6 +19,7 @@ footer{
 .founders{
     width: 80%;
     border-radius: 10px;
+    max-width: 800px;
 }
 
 .mainImg{
@@ -24,6 +27,25 @@ footer{
     border-radius: 10px;
 }
 
-.smallImg{
+h1{
+        font-family: 'Anton', sans-serif; 
 
+}
+
+h2, h3, h4, h5, nav, span, label, input, select, textarea, p{
+    font-family: 'Oswald', sans-serif; 
+}
+
+a, button {
+    font-family: 'Staatliches', cursive; 
+}
+
+.btn-primary{
+    background-color: #EE6C4D;
+    border-color: #ec5732;
+}
+
+.btn-primary:hover{
+    background-color: #CD3813;
+    border-color: #ec5732;
 }
